@@ -9,46 +9,46 @@ choices = ['rock', 'paper', 'scissors'];
 
 function game(e){
     var userChoice = e.target.id;
-    userDiv.innerHTML = userChoice;
+    userDiv.innerHTML = `<img class="choice" src="./assets/${userChoice}.jpg">`;
     var compChoice = choices[Math.floor(Math.random()*choices.length)];
-    compDiv.innerHTML = compChoice
+    compDiv.innerHTML = `<img class="choice" src="./assets/${compChoice}.jpg">`
     var result = '';
 
     if(userChoice == 'rock'){
         if(compChoice == 'rock'){
-            result = 'tie'
+            result = 'Tie'
         }
         if(compChoice == 'paper'){
-            result = 'loss'
+            result = 'Loss'
         }
         if(compChoice == 'scissors'){
-            result = 'win'
+            result = 'Win'
         }
     }
     if(userChoice == 'paper'){
         if(compChoice == 'rock'){
-            result = 'win'
+            result = 'Win'
         }
         if(compChoice == 'paper'){
-            result = 'tie'
+            result = 'Tie'
         }
         if(compChoice == 'scissors'){
-            result = 'loss'
+            result = 'Loss'
         }
     }
     if(userChoice == 'scissors'){
         if(compChoice == 'rock'){
-            result = 'loss'
+            result = 'Loss'
         }
         if(compChoice == 'paper'){
-            result = 'win'
+            result = 'Win'
         }
         if(compChoice == 'scissors'){
-            result = 'tie'
+            result = 'Tie'
         }
     }
 
-    resultsDiv.innerHTML = result
+    resultsDiv.innerHTML = `<h1>${result}</h1>`
 
 }
 

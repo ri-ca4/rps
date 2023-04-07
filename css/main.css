@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#dispChoices{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50vh;
+    width: 80vh;
+}
+
+#controls{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 5vh;
+    width: 45vw;
+}
+
+#controls button{
+    height: 5vh;
+    width: 20vh;
+    font-size: large;
+    border: 3px solid black;
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+
+#controls button:focus,
+#controls button:hover{
+    background-color: black;
+    color: white;
+}
+
+img.choice{
+    height: 50vh;
+    width: 50vh;
+}
