@@ -61,4 +61,6 @@ button{
 img.choice{
     height: 40vw;
     width: 40vw;
+    max-height: 100px;
+    max-width: 100px;
 }
